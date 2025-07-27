@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sqlButton = document.getElementById('sql-btn');
     const javaButton = document.getElementById('java-btn');
     const pythonButton = document.getElementById('python-btn');
+    const bharathamButton = document.getElementById('bharatham-btn');
   
     // Event listeners for language buttons
     sqlButton.addEventListener('click', function() {
@@ -23,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
     pythonButton.addEventListener('click', function() {
       startQuiz('Python');
+    });
+
+    bharathamButton.addEventListener('click', function() {
+      startQuiz('Bharatham');
     });
   
     let currentQuiz = 0;
@@ -435,6 +440,462 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
           }
         ]; 
+      }
+      if (language === 'Bharatham') {
+        questions =[
+           {
+            question: 'పాండవుల్లో వయస్సు ప్రకారం పెద్దవాడు ఎవరు?',
+            answers: [
+              { text: 'అర్జునుడు', correct: false },
+              { text: 'సహదేవుడు', correct: false },
+              { text: 'యుధిష్ఠిరుడు', correct: true },
+              { text: 'నకులుడు', correct: false }
+            ]
+          },
+          {
+            question: 'కర్ణుని తల్లి ఎవరు?',
+            answers: [
+              { text: 'కుంతి', correct: true },
+              { text: 'ద్రౌపది', correct: false },
+              { text: 'గాంధారి', correct: false },
+              { text: 'సుభద్రా', correct: false }
+            ]
+          },
+          {
+            question: 'అర్జునుడి ధనుస్సు పేరు ఏమిటి?',
+            answers: [
+              { text: 'పినాక', correct: false },
+              { text: 'శారంగం', correct: false },
+              { text: 'గాండీవం', correct: true },
+              { text: 'విజయం', correct: false }
+            ]
+          },
+          {
+            question: 'మహాభారతం రచయిత ఎవరు?',
+            answers: [
+              { text: 'వాల్మీకి', correct: false },
+              { text: 'వేదవ్యాసుడు', correct: true },
+              { text: 'కాళిదాసు', correct: false },
+              { text: 'తులసీదాస్', correct: false }
+            ]
+          },
+          {
+            question: 'పాండవులు మరియు కౌరవులకు గురువు ఎవరు?',
+            answers: [
+              { text: 'కృపాచార్యుడు', correct: false },
+              { text: 'ద్రోణాచార్యుడు', correct: true },
+              { text: 'భృగు', correct: false },
+              { text: 'పరశురాముడు', correct: false }
+            ]
+          },
+          {
+            question: 'కౌరవులు ఎన్ని మంది?',
+            answers: [
+              { text: '50', correct: false },
+              { text: '100', correct: true },
+              { text: '101', correct: false },
+              { text: '108', correct: false }
+            ]
+          },
+          {
+            question: 'ద్రౌపదికి తండ్రి ఎవరు?',
+            answers: [
+              { text: 'ద్రుపదుడు', correct: true },
+              { text: 'శల్యుడు', correct: false },
+              { text: 'విరాటుడు', correct: false },
+              { text: 'భీష్ముడు', correct: false }
+            ]
+          },
+          {
+            question: 'ద్రోణాచార్యుని ఎవరు హతించారు?',
+            answers: [
+              { text: 'అర్జునుడు', correct: false },
+              { text: 'భీముడు', correct: false },
+              { text: 'దృష్టద్యుమ్నుడు', correct: true },
+              { text: 'అభిమన్యుడు', correct: false }
+            ]
+          },
+          {
+            question: 'అర్జునుడి రథ సారథి ఎవరు?',
+            answers: [
+              { text: 'ద్రోణుడు', correct: false },
+              { text: 'భీష్ముడు', correct: false },
+              { text: 'కృష్ణుడు', correct: true },
+              { text: 'యుధిష్ఠిరుడు', correct: false }
+            ]
+          },
+          {
+            question: 'పాండవులు మరియు కౌరవుల మధ్య యుద్ధం పేరు ఏది?',
+            answers: [
+              { text: 'రామాయణ', correct: false },
+              { text: 'కురుక్షేత్ర యుద్ధం', correct: true },
+              { text: 'ధర్మ యుద్ధం', correct: false },
+              { text: 'కీలింగ్ యుద్ధం', correct: false }
+            ]
+          },
+          {
+            question: 'అభిమన్యునిపై అన్యాయంగా యుద్ధం చేసినది ఎవరు?',
+            answers: [
+              { text: 'పాండవులు', correct: false },
+              { text: 'రాక్షసులు', correct: false },
+              { text: 'కౌరవులు', correct: true },
+              { text: 'యాదవులు', correct: false }
+            ]
+          },
+          {
+            question: 'అర్జునుడి శంఖం పేరు ఏమిటి?',
+            answers: [
+              { text: 'పాంచజన్య', correct: true },
+              { text: 'శంకహష్టం', correct: false },
+              { text: 'పొపట', correct: false },
+              { text: 'దధిమతి', correct: false }
+            ]
+          },
+          {
+            question: 'కర్ణుని ధర్మ నిబద్ధతను మెచ్చిన వ్యక్తి ఎవరు?',
+            answers: [
+              { text: 'దుర్యోధనుడు', correct: false },
+              { text: 'కర్ణుడు', correct: false },
+              { text: 'భీష్ముడు', correct: true },
+              { text: 'శకుని', correct: false }
+            ]
+          },
+          {
+            question: 'దుర్యోధనను ఎవరు హతించారు?',
+            answers: [
+              { text: 'అర్జునుడు', correct: false },
+              { text: 'భీముడు', correct: true },
+              { text: 'యుధిష్ఠిరుడు', correct: false },
+              { text: 'నకులుడు', correct: false }
+            ]
+          },
+          {
+            question: 'శికంధి గత జన్మలో ఎవరు?',
+            answers: [
+              { text: 'అంబ', correct: true },
+              { text: 'సత్యవతి', correct: false },
+              { text: 'గంగా', correct: false },
+              { text: 'రాధ', correct: false }
+            ]
+          },
+          {
+            question: 'భగవద్గీత బోధనలు ఇచ్చినది ఎవరు?',
+            answers: [
+              { text: 'యుధిష్ఠిర', correct: false },
+              { text: 'వ్యాస', correct: false },
+              { text: 'కృష్ణ', correct: true },
+              { text: 'భీష్మ', correct: false }
+            ]
+          },
+          {
+            question: 'అజ్ఞాతవాసంలో అర్జునుడు ఏ వేషం ధరించాడు?',
+            answers: [
+              { text: 'రసికుడు', correct: false },
+              { text: 'గంధర్వుడు', correct: false },
+              { text: 'బృహన్నల', correct: true },
+              { text: 'యజ్ఞపతి', correct: false }
+            ]
+          },
+          {
+            question: 'మహాభారతంలో యుద్ధం అనంతరం హస్తినాపుర రాజ్యాధికారి ఎవరు?',
+            answers: [
+              { text: 'దుర్యోధన', correct: false },
+              { text: 'భీష్మ', correct: false },
+              { text: 'యుధిష్ఠిర', correct: true },
+              { text: 'అశ్వత్థామ', correct: false }
+            ]
+          },
+          {
+            question: 'పాండవులకు శాపం విధించిన ఋషి ఎవరు?',
+            answers: [
+              { text: 'దధీచి', correct: false },
+              { text: 'దుర్వాస', correct: true },
+              { text: 'వశిష్ఠ', correct: false },
+              { text: 'విశ్వామిత్ర', correct: false }
+            ]
+          },
+          {
+            question: 'కర్ణని పెంచుకున్న తల్లి ఎవరు?',
+            answers: [
+              { text: 'కుంతి', correct: false },
+              { text: 'మద్రి', correct: false },
+              { text: 'రాధ', correct: false },
+              { text: 'అంబ', correct: true }
+            ]
+          },
+          {
+            question: 'భీముడికి ఎంతమంది సంతానం ఉన్నారు?',
+            answers: [
+              { text: '1', correct: false },
+              { text: '3', correct: false },
+              { text: '5', correct: false },
+              { text: '2', correct: true }
+            ]
+          },
+          {
+            question: 'పాండవులు నిర్మించిన కొత్త రాజధాని పేరు ఏమిటి?',
+            answers: [
+              { text: 'ఇంద్రప్రస్థం', correct: true },
+              { text: 'హస్తినాపురం', correct: false },
+              { text: 'ద్వారకా', correct: false },
+              { text: 'వృత్తం', correct: false }
+            ]
+          },
+          {
+            question: 'భీముడు ఏ రాక్షసుని హతించాడు?',
+            answers: [
+              { text: 'హిడింబాసుర', correct: true },
+              { text: 'అలంభుష', correct: false },
+              { text: 'అలయుధ', correct: false },
+              { text: 'వేదావతిక్', correct: false }
+            ]
+          },
+          {
+            question: 'భీష్మ పితామహుని అసలు పేరు ఏమిటి?',
+            answers: [
+              { text: 'దేవవ్రత', correct: true },
+              { text: 'కారుణ్య', correct: false },
+              { text: 'పారమిత', correct: false },
+              { text: 'ధర్మాత్మ', correct: false }
+            ]
+          },
+          {
+           question: 'ఎంత దినంలో ద్రోణాచార్యుడు హతమయ్యాడు?',
+    answers: [
+      { text: '14వ రోజు', correct: false },
+      { text: '15వ రోజు', correct: false },
+      { text: '16వ రోజు', correct: false },
+      { text: '13వ రోజు', correct: true }
+    ]
+          },
+          {
+            question: 'ద్రోణాచార్యుని హత్యకు ప్రేరేపించిన యోధుడు ఎవరు?',
+            answers: [
+              { text: 'అర్జునుడు', correct: false },
+              { text: 'భీముడు', correct: false },
+              { text: 'దృష్టద్యుమ్నుడు', correct: true },
+              { text: 'యుధిష్ఠిరుడు', correct: false }
+            ]
+          },
+          {
+            question: 'చంద్రహాస రాజు ఏ యదవ వంశానికి చెందాడు?',
+            answers: [
+              { text: 'కుంతల', correct: true },
+              { text: 'కౌరవ', correct: false },
+              { text: 'పాండవాసుర', correct: false },
+              { text: 'యదవ', correct: false }
+            ]
+          },
+          {
+            question: 'అర్జునుడికి ధనుస్సును ఎవరు ప్రసాదించారు?',
+            answers: [
+              { text: 'ఇంద్రుడు', correct: false },
+              { text: 'శివుడు', correct: false },
+              { text: 'వారుణుడు', correct: false },
+              { text: 'అగ్ని దేవుడు', correct: true }
+            ]
+          },
+          {
+            question: 'అభిమన్యుని కుమారుని పేరు ఏమిటి?',
+            answers: [
+              { text: 'పరిక్షిత్తు', correct: true },
+              { text: 'సత్యతీకు', correct: false },
+              { text: 'జనమేజయుడు', correct: false },
+              { text: 'అనురాగ్', correct: false }
+            ]
+          },
+          {
+            question: 'జనమేజయుడు ఏ యాగం నిర్వహించాడు?',
+            answers: [
+              { text: 'రాజసూయ యాగం', correct: false },
+              { text: 'అశ్వమేధ యాగం', correct: false },
+              { text: 'సర్ప సత్ర యాగం', correct: true },
+              { text: 'పుత్రకామేశ్టి యాగం', correct: false }
+            ]
+          }
+        ];
+        //  [
+        //   {
+        //     question: 'Who was the eldest of the Pandavas?',
+        //       answers: [
+        //         { text: 'Arjuna', correct: false },
+        //         { text: 'Sahadeva', correct: false },
+        //         { text: 'Yudhishthira', correct: true },
+        //         { text: 'Nakula', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who was the mother of Karna?',
+        //       answers: [
+        //         { text: 'Kunti', correct: true },
+        //         { text: 'Draupadi', correct: false },
+        //         { text: 'Gandhari', correct: false },
+        //         { text: 'Subhadra', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'What was the name of Arjuna’s bow?',
+        //       answers: [
+        //         { text: 'Pinaka', correct: false },
+        //         { text: 'Sharanga', correct: false },
+        //         { text: 'Gandiva', correct: true },
+        //         { text: 'Vijaya', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who composed the Mahabharata?',
+        //       answers: [
+        //         { text: 'Tulsidas', correct: false },
+        //         { text: 'Valmiki', correct: false },
+        //         { text: 'Ved Vyasa', correct: true },
+        //         { text: 'Kalidasa', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who was the teacher of both the Pandavas and Kauravas?',
+        //       answers: [
+        //         { text: 'Kripacharya', correct: false },
+        //         { text: 'Dronacharya', correct: true },
+        //         { text: 'Bhrigu', correct: false },
+        //         { text: 'Parashurama', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'How many Kaurava brothers were there?',
+        //       answers: [
+        //         { text: '50', correct: false },
+        //         { text: '100', correct: true },
+        //         { text: '101', correct: false },
+        //         { text: '108', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who was Draupadi’s father?',
+        //       answers: [
+        //         { text: 'Drupada', correct: true },
+        //         { text: 'Shalya', correct: false },
+        //         { text: 'Virata', correct: false },
+        //         { text: 'Bhishma', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'What was the name of Bhima’s mace?',
+        //       answers: [
+        //         { text: 'Sharanga', correct: false },
+        //         { text: 'Kaumodaki', correct: false },
+        //         { text: 'Vajra', correct: false },
+        //         { text: 'Gada', correct: true }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who killed Dronacharya in the war?',
+        //       answers: [
+        //         { text: 'Arjuna', correct: false },
+        //         { text: 'Bhima', correct: false },
+        //         { text: 'Dhrishtadyumna', correct: true },
+        //         { text: 'Abhimanyu', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who was the charioteer of Arjuna?',
+        //       answers: [
+        //         { text: 'Drona', correct: false },
+        //         { text: 'Bhishma', correct: false },
+        //         { text: 'Krishna', correct: true },
+        //         { text: 'Yudhishthira', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'What was the name of the war between the Pandavas and Kauravas?',
+        //       answers: [
+        //         { text: 'Ramayana', correct: false },
+        //         { text: 'Kurukshetra War', correct: true },
+        //         { text: 'Dharma Yudh', correct: false },
+        //         { text: 'Kalinga War', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who broke the rules and attacked Abhimanyu in a group?',
+        //       answers: [
+        //         { text: 'Pandavas', correct: false },
+        //         { text: 'Rakshasas', correct: false },
+        //         { text: 'Kauravas', correct: true },
+        //         { text: 'Yadavas', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'What was the name of Karna’s divine armor?',
+        //       answers: [
+        //         { text: 'Kavacha and Kundala', correct: true },
+        //         { text: 'Gandiva', correct: false },
+        //         { text: 'Sharanga', correct: false },
+        //         { text: 'Paduka', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who was known for his vow of celibacy and loyalty to Hastinapur?',
+        //       answers: [
+        //         { text: 'Duryodhana', correct: false },
+        //         { text: 'Karna', correct: false },
+        //         { text: 'Bhishma', correct: true },
+        //         { text: 'Shakuni', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who killed Duryodhana in the war?',
+        //       answers: [
+        //         { text: 'Arjuna', correct: false },
+        //         { text: 'Bhima', correct: true },
+        //         { text: 'Yudhishthira', correct: false },
+        //         { text: 'Nakula', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who was Shikhandi in a previous birth?',
+        //       answers: [
+        //         { text: 'Amba', correct: true },
+        //         { text: 'Satyavati', correct: false },
+        //         { text: 'Ganga', correct: false },
+        //         { text: 'Radha', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who gave the Bhagavad Gita teachings?',
+        //       answers: [
+        //         { text: 'Yudhishthira', correct: false },
+        //         { text: 'Vyasa', correct: false },
+        //         { text: 'Krishna', correct: true },
+        //         { text: 'Bhishma', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Which Pandava was skilled in sword fighting and horse riding?',
+        //       answers: [
+        //         { text: 'Sahadeva', correct: false },
+        //         { text: 'Nakula', correct: true },
+        //         { text: 'Bhima', correct: false },
+        //         { text: 'Yudhishthira', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'What was the disguise of Arjuna during exile?',
+        //       answers: [
+        //         { text: 'A cook', correct: false },
+        //         { text: 'A teacher', correct: false },
+        //         { text: 'A eunuch named Brihannala', correct: true },
+        //         { text: 'A priest', correct: false }
+        //       ]
+        //   },
+        //   {
+        //     question: 'Who was the king of Hastinapur at the end of Mahabharata?',
+        //       answers: [
+        //         { text: 'Duryodhana', correct: false },
+        //         { text: 'Bhishma', correct: false },
+        //         { text: 'Yudhishthira', correct: true },
+        //         { text: 'Ashwatthama', correct: false }
+        //       ]
+        //  }
+        // ];
       }
       startGame(questions);
     }
